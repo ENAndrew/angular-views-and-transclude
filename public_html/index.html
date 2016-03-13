@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html ng-app="hobbyApp">
+    <head>
+        <title>My Hobbies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+    <page-header-directive>
+        <header-bar></header-bar>
+    </page-header-directive>
+        
+        <list-directive></list-directive>
+        
+        <div>
+            <div ui-view></div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+        <script src="app.js" type="text/javascript"></script>
+        <script src="directives/directives.js" type="text/javascript"></script>
+        <script src="views/hobbies/hobbies.service.js" type="text/javascript"></script>
+        <script src="views/hobbies/hobbies.controller.js" type="text/javascript"></script>
+        <script src="views/main/main.controller.js" type="text/javascript"></script>
+    </body>
+</html>
